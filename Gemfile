@@ -8,6 +8,10 @@ gem 'pg', '~> 0.21'
 gem 'mongoid', '~> 5.4.0'
 gem 'puma', '~> 3.12'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.8'
+end
+
 group :development do
   gem 'spring', '~> 2.0.2'
 end
