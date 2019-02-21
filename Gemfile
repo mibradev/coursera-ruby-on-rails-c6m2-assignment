@@ -11,6 +11,7 @@ gem 'puma', '~> 3.12'
 gem 'pry-rails'
 
 group :development, :test do
+  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
   gem 'rspec-rails', '~> 3.8'
   gem 'byebug'
   gem 'pry-byebug'
