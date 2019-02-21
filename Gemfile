@@ -6,6 +6,7 @@ gem 'rails', '4.2.11'
 gem 'rails-api', '~> 0.4.1'
 gem 'pg', '~> 0.21'
 gem 'mongoid', '~> 5.4.0'
+gem 'jbuilder', '~> 2.8'
 gem 'puma', '~> 3.12'
 
 group :development, :test do
