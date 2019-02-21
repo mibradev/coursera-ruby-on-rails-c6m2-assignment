@@ -10,3 +10,7 @@ gem 'mongoid', '~> 5.4.0'
 group :development do
   gem 'spring', '~> 2.0.2'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
