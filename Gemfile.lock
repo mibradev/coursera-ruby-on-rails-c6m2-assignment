@@ -64,6 +64,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     origin (2.3.1)
     pg (0.21.0)
+    puma (3.12.0)
     rack (1.6.11)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -120,6 +121,7 @@ PLATFORMS
 DEPENDENCIES
   mongoid (~> 5.4.0)
   pg (~> 0.21)
+  puma (~> 3.12)
   rails (= 4.2.11)
   rails-api (~> 0.4.1)
   rails_12factor
