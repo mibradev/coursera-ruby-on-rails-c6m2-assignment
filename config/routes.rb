@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   scope :api, defaults: { format: :json } do
-    resources :states, except: [:new, :edit]
-    resources :cities, except: [:new, :edit]
+    resources :states, only: [:index, :show]
+    resources :cities, only: [:index, :show]
   end
 
   root 'home#index'
