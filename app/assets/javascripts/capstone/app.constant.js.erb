@@ -1,0 +1,11 @@
+(function() {
+  "use strict"
+
+  angular
+    .module("capstone")
+    .constant("capstone.CONFIG", {
+      pages: {
+        home: "<%= asset_path 'capstone/pages/home.html' %>"
+      }
+    })
+})()
