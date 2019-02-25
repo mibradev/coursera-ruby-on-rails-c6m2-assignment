@@ -8,15 +8,15 @@ default: &default
 
 development:
   <<: *default
-  database: coursera_ruby_on_rails_c6m1_assignment_development
+  database: coursera_ruby_on_rails_c6m2_assignment_development
 
 test:
   <<: *default
-  database: coursera_ruby_on_rails_c6m1_assignment_test
+  database: coursera_ruby_on_rails_c6m2_assignment_test
 
 production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: coursera_ruby_on_rails_c6m1_assignment_production
+  database: coursera_ruby_on_rails_c6m2_assignment_production
   url: <%= ENV['DATABASE_URL'] %>

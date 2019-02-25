@@ -16,4 +16,4 @@
 # Using secret_token for rails3 compatibility. Change to secret_key_base
 # to avoid deprecation warning.
 # Can be safely removed in a rails3 api-only application.
-CourseraRubyOnRailsC6m1Assignment::Application.config.secret_token = 'd9006b913ee3b46a2dd3dc95d910ac6cf314fe9da499711bf7e3c4ebcc07745652f4906faebaf57a24e788d271dcc858d8a2d251732b7399a5e8c6fc7b5a56bd'
+CourseraRubyOnRailsC6m2Assignment::Application.config.secret_token = 'd9006b913ee3b46a2dd3dc95d910ac6cf314fe9da499711bf7e3c4ebcc07745652f4906faebaf57a24e788d271dcc858d8a2d251732b7399a5e8c6fc7b5a56bd'
