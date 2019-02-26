@@ -30,7 +30,9 @@
 
       self.destroy = function() {
         self.city.$delete().then(function(response) {
-          self.cities = self.cities.filter(city => city.id !== self.city.id)
+          self.cities = self.cities.filter(function(city) {
+             return city.id !== self.city.id
+          })
           self.city = new City
         }).catch(onRejected)
       }
