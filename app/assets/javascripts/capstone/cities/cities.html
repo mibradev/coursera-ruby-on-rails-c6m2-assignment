@@ -1,0 +1,29 @@
+<div>
+  <h3 class="page-header">Cities</h3>
+
+  <form>
+    <div class="form-group">
+      <label for="city_name">Name</label>
+      <input ng-model="citiesVM.city.name" id="city_name" class="form-control" name="city" required="required">
+    </div>
+
+    <button ng-if="!citiesVM.city.id" ng-click="citiesVM.create()" class="btn btn-default" type="submit">Create City</button>
+
+    <div ng-if="citiesVM.city.id">
+      <button ng-click="citiesVM.update()" class="btn btn-default" type="submit">Update City</button>
+      <button ng-click="citiesVM.destroy()" class="btn btn-danger" type="submit">Delete City</button>
+    </div>
+  </form>
+
+  <hr>
+
+  <div class="list-group">
+    <button
+      ng-repeat="city in citiesVM.cities | orderBy: 'name'"
+      ng-click="citiesVM.edit(city)"
+      class="list-group-item">
+
+      {{ city.name }}
+    </button>
+  </div>
+</div>

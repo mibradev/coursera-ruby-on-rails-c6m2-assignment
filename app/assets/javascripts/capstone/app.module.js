@@ -2,6 +2,7 @@
   "use strict"
 
   angular.module("capstone", [
-    "ui.router"
+    "ui.router",
+    "capstone.cities"
   ])
 })()

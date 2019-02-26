@@ -4,8 +4,10 @@
   angular
     .module("capstone")
     .constant("capstone.CONFIG", {
+      api_url: "<%= ENV['RAILS_API_URL'] %>",
       pages: {
-        home: "<%= asset_path 'capstone/pages/home.html' %>"
+        home: "<%= asset_path 'capstone/pages/home.html' %>",
+        cities: "<%= asset_path 'capstone/cities/cities.html' %>"
       }
     })
 })()
